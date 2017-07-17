@@ -1,0 +1,77 @@
+@import "variable";
+body {
+/*  box-sizing: border-box;*/
+  background-image: url(weatherimage.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 500%;
+
+  /*display:inline-block;*/
+}
+
+.text-center, .data-item
+{
+color: $black;
+
+
+/*color:#444;*/
+}
+
+.jumbotron, .well
+{
+/*background: #888;*/
+background: $london-bg-color-alt;
+color: $black;
+}
+
+
+#london
+{
+  border: 0.25rem solid currentColor;
+  cursor: pointer;
+  font-size:$font-size;
+  height: $london-height-size;
+  width: $london-width-size;
+  margin-left: 17rem;
+  padding: 0;
+/*  transition: all 0.2s ease;*/
+  transition: background-color 1s ease;
+
+&:hover,
+&:focus,
+&:active
+ {
+  font-size: $london-font-size-alt;
+  outline: none;
+  background: $london-bg-color-alt;
+/*transform: scale(0.9) rotate(360deg);*/
+}
+}
+
+#seattle
+{
+  border: 0.25rem solid currentColor;
+  cursor: pointer;
+  font-size: $font-size;
+  height: $london-height-size;
+  width: $london-width-size;
+  margin-left: 10rem;
+  padding: 0;
+  /*transition: all 0.2s ease;*/
+  transition: background-color 1s ease;
+
+&:hover,
+&:focus,
+&:active
+ {
+  font-size: $london-font-size-alt;
+  outline: none;
+  background:$london-bg-color-alt
+  /*transform: scale(0.9) rotate(360deg);*/
+
+}
+}
+
+.copyright
+{
+color: $black;
+}
